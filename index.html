@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Século Atual</title>
+
+    <style>
+        body{
+            background-color: rgb(73, 73, 73);
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let anoAtual = parseInt(prompt('Insira o ano que se deseja consultar: '));
+        calculaSeculo(anoAtual);
+
+        function calculaSeculo(ano){
+            if(ano%2 !== 0){
+            let sec = Math.floor(ano/100 + 1);
+            alert(`O século do ano de ${ano} é ${sec}`);
+            }
+            else{
+            let sec = Math.floor(ano/100);
+            alert(`O século do ano de ${ano} é ${sec}`);
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
